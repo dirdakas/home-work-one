@@ -1,0 +1,34 @@
+{
+  "children": [
+    {
+      "label": "None",
+      "value": "NONE"
+    },
+    {
+      "label": "Single",
+      "value": "SINGLE"
+    },
+    {
+      "label": "Multiple",
+      "value": "MULTIPLE"
+    }
+  ],
+  "coapplicant": [
+    {
+      "label": "None",
+      "value": "NONE"
+    },
+    {
+      "label": "Single borrower",
+      "value": "SINGLE_BORROWER"
+    },
+    {
+      "label": "Multiple Borrowers",
+      "value": "MULTIPLE_BORROWERS"
+    }
+  ],
+  "min-monthly-income": 500000,
+  "min-request-amount": 20000000,
+  "min-load-term": 36,
+  "max-load-term": 360
+}

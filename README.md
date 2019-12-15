@@ -2,6 +2,14 @@
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 8.3.19.
 
+## Instalation
+
+Install:
+
+1. [Node](https://nodejs.org/en/).
+2. AngularCLI `npm install -g @angular/cli`
+3. Install project packages `npm i`
+
 ## Development server
 
 Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
