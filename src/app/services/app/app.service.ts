@@ -16,8 +16,8 @@ import { IFormItem } from '../../models/formItem.model';
   providedIn: 'root'
 })
 export class AppService {
-  static BE_URL: string = 'https://homework.fdp.workers.dev/swb-222222';
-  static NUMBER_REGEX: string = `[1-9][0-9]*`;
+  static BE_URL: string = 'https://homework.fdp.workers.dev/';
+  static NUMBER_REGEX: string = '^[1-9]+\d*';
 
   constructor(
     private http: HttpClient,
@@ -63,17 +63,9 @@ export class AppService {
   }
 
   sendToServer(form: IFormItem): Observable<any> {
-    const headers = new HttpHeaders({
-      Accept: 'application/json; charset=utf-8',
-      'Content-Type': 'application/json; charset=utf-8',
-      'Cache-Control': 'no-cache',
-      'Access-Control-Allow-Origin': '*'
-    });
-
     return this.http.post<any>(
       AppService.BE_URL,
-      { form },
-      { headers }
+      { form }
     );
   }
 }

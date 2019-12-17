@@ -36,7 +36,7 @@
         <mat-error *ngIf="calcForm.get('requestedAmount').hasError('min')">
           Requested amount should be more than {{ mockData['min-request-amount'] }}
         </mat-error>
-        <mat-error *ngIf="calcForm.get('monthlyIncome').hasError('pattern')">
+        <mat-error *ngIf="calcForm.get('requestedAmount').hasError('pattern')">
           Should start with 1-9 number and contain only numbers
         </mat-error>
       </mat-form-field>
@@ -53,7 +53,7 @@
         <mat-error *ngIf="calcForm.get('loanTerm').hasError('min') || calcForm.get('loanTerm').hasError('max')">
           Load term should be between {{ mockData['min-load-term'] }} and {{ mockData['max-load-term'] }}
         </mat-error>
-        <mat-error *ngIf="calcForm.get('monthlyIncome').hasError('pattern')">
+        <mat-error *ngIf="calcForm.get('loanTerm').hasError('pattern')">
           Should start with 1-9 number and contain only numbers
         </mat-error>
       </mat-form-field>
